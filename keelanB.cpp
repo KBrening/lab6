@@ -2,12 +2,12 @@
 
 #include "fonts.h"
 
-void showName() {
+void showName(int y, int x) {
 	Rect r;
-	r.bot = 750;
-	r.left = 500;
+	r.bot = y;
+	r.left = x;
 	r.center = 0;
-	ggprint8b(&r, 16, 0x00ffff00, "Keelan Brening");
+	ggprint16(&r, 16, 0x00ffff00, "Keelan Brening");
 }
 
 void drawbox() {
